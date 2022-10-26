@@ -45,3 +45,5 @@ add_subdirectory(${TESTS_FUNCTIONAL_TESTS_DIR}/deep_sleep_mbed_hal)
 add_subdirectory(${TESTS_FUNCTIONAL_TESTS_DIR}/file_manager)
 add_subdirectory(${TESTS_FUNCTIONAL_TESTS_DIR}/io_expander)
 add_subdirectory(${TESTS_FUNCTIONAL_TESTS_DIR}/qdac)
+
+add_subdirectory(${TESTS_FUNCTIONAL_TESTS_DIR}/stl_features)

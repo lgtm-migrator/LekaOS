@@ -75,6 +75,11 @@ TEST_F(TouchSensorTest, start)
 	EXPECT_TRUE(touch_sensor_kit.isRunning());
 }
 
+TEST_F(TouchSensorTest, run)
+{
+	touch_sensor_kit.run();
+}
+
 TEST_F(TouchSensorTest, stop)
 {
 	touch_sensor_kit.stop();

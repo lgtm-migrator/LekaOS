@@ -12,7 +12,6 @@ using namespace std::chrono_literals;
 
 void TouchSensorKit::init()
 {
-	_event_loop.registerCallback([this] { run(); });
 	_ear_left.init();
 	_ear_right.init();
 	_belt_left_back.init();
@@ -26,6 +25,8 @@ void TouchSensorKit::init()
 	_belt_left_front.setSensitivity(default_max_sensitivity_value);
 	_belt_right_back.setSensitivity(default_max_sensitivity_value);
 	_belt_right_front.setSensitivity(default_max_sensitivity_value);
+
+	_event_loop.registerCallback([this] { run(); });
 }
 
 void TouchSensorKit::start()

@@ -58,7 +58,6 @@ void TouchSensorKit::run()
 		if (_on_end_read_callback != nullptr) {
 			_on_end_read_callback();
 		}
-		rtos::ThisThread::sleep_for(100ms);
 	}
 }
 void TouchSensorKit::stop()

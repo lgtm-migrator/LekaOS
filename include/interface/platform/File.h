@@ -38,6 +38,8 @@ struct File {
 
 	virtual auto tell() -> std::size_t = 0;
 
+	virtual auto exists() -> bool = 0;
+
 	virtual auto reopen(const char *path, const char *mode) -> bool					 = 0;
 	virtual auto reopen(const std::filesystem::path &path, const char *mode) -> bool = 0;
 

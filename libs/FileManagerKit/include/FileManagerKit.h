@@ -40,6 +40,8 @@ struct File : public interface::File, public mbed::NonCopyable<File> {
 
 	auto tell() -> std::size_t final;
 
+	auto exists() -> bool final;
+
 	auto reopen(const char *path, const char *mode = "r") -> bool final;
 	auto reopen(const std::filesystem::path &path, const char *mode = "r") -> bool final;
 

@@ -128,6 +128,13 @@ auto File::tell() -> std::size_t
 	return std::ftell(_file.get());
 }
 
+auto File::exists() -> bool
+{
+	auto file_exists = is_open();
+
+	return file_exists;
+}
+
 auto File::reopen(const char *path, const char *mode) -> bool
 {
 	if (_file == nullptr) {

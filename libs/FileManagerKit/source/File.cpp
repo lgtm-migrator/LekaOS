@@ -130,7 +130,7 @@ auto File::tell() -> std::size_t
 
 auto File::exists() -> bool
 {
-	auto file_exists = is_open();
+	auto file_exists = is_open() && size() != 0;
 
 	return file_exists;
 }
